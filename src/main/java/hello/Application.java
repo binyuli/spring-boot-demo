@@ -14,7 +14,7 @@ public class Application{
 	public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(Application.class, args);
         
-        logger.debug("start in Application:");
+        logger.debug("start in Application:");	// 记录不到日志
         System.out.println("start in Application:");
         
         String[] beanNames = ctx.getBeanDefinitionNames();
